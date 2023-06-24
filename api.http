@@ -1,0 +1,23 @@
+### Listar Assets
+GET http://localhost:3000/api/assets
+
+### Criar Assets
+POST http://localhost:3000/api/assets
+Content-Type: application/json
+
+{
+    "id": "asset3",
+    "symbol": "SYMB3"
+}
+
+### Listar Ordens
+GET http://localhost:3000/api/orders
+
+### Criar Ordens
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+    "asset_id": "asset1",
+    "price": 12
+}
