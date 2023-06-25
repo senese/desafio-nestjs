@@ -6,8 +6,8 @@ POST http://localhost:3000/api/assets
 Content-Type: application/json
 
 {
-    "id": "asset3",
-    "symbol": "SYMB3"
+    "id": "asset1",
+    "symbol": "SYMB1"
 }
 
 ### Listar Ordens
