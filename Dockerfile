@@ -1,7 +1,10 @@
 FROM node:20-slim
 
-WORKDIR /home/node/app
+WORKDIR /app
 
-USER node
+COPY . .
+RUN apt-get update -y && apt-get install -y openssl
+RUN npm install
+RUN npx prisma generate
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["npm", "start"]
